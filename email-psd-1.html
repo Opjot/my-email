@@ -1,54 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
     <title>Document</title>
     <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        @media only screen and (max-width:640px) {
+            table.container{
+				width: 440px !important;
+				}
+            table.callout{
+                width:100% !important;
+                clear:left;
+            }
+            br.spacer{
+                display:none;
+            }
+
+            h3{
+                margin:10px 0 10px 0;
+            }
+
+            .side-bar{
+                border-left:1px solid #7eb2dd
+            }
+        }
+
+        @media only screen and (max-width:440px) {
+            table.container{
+					width: 100% !important;
+				}
+
+            .toy-1, .toy-2 {
+                width: 100% !important;
+                }
+
+            .toy-bin{
+                height:200px !important;
+            }
+        }
+
     </style>
 </head>
 <body style="margin:0; padding:0;" height="100vh">
-    <table border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="beige" style="table-layout:fixed;">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#efe1b0" style="table-layout:fixed;">
         <tr>
             <td>
 
-                <table class="container" border="0" align="center" cellspacing="0" cellpadding="0" width="640"  bgcolor="white">
+                <table class="container" border="0" align="center" cellspacing="0" cellpadding="0" width="640"  bgcolor="beige">
                     <tr>
-                        <td align="center" bgcolor="navy">
-                            <h1 style="color: wheat;">The Toy Shop!</h1>
+                        <td align="center" bgcolor="#7eb2dd">
+                            <h1 style="color: #FFB370;">The Toy Shop!</h1>
                         </td>
                     </tr>
                     <tr>
-                        <td align="center" bgcolor="beige" style="padding:20px 10px; border-right: 1px solid navy;border-left: 1px solid navy;">
+                        <td align="center" bgcolor="beige" style="padding:20px 10px; border-right: 1px solid #7EB2DD;border-left: 1px solid#7EB2DD;">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam excepturi nobis totam eos libero labore eveniet sed. Delectus, necessitatibus explicabo!
                         </td>
                     </tr>
                     <tr>
-                        <td bgcolor="beige" align="center" style="border-right: 1px solid navy; border-left: 1px solid navy;">
-                            <img height="300" width="100%" style="padding:20px 0px 30px 0px" src="../email-psd-1/toys.jpg" alt="Picture of stuffed animal toys.">
+                        <td bgcolor="beige" align="center" style="border-right: 1px solid #7EB2DD; border-left: 1px solid #7eb2dd;">
+                            <img class="toy-bin" height="300" width="100%" style="padding:20px 0px 30px 0px" src="../email-psd-1/toys.jpg" alt="Picture of stuffed animal toys.">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit, harum quos officiis laborum dolorem impedit ad mollitia corrupti maiores eius vel illo vero saepe facere fugit qui in deserunt commodi nisi ratione tempore magnam laudantium fuga! Ab consequatur quaerat, temporibus rerum dolorem porro odio reprehenderit, dolore explicabo eius excepturi.
                         </td>
                     </tr>
                     <tr >
-                        <td bgcolor="beige" align="center" style="padding: 20px 0; border-right: 1px solid navy;border-left: 1px solid navy;">
-                            <a style="background-color:navy; color: wheat; border-radius: 5px; padding: 10px 15px 10px 15px; text-decoration: none;" href="#">Online Store</a>
+                        <td bgcolor="beige" align="center" style="padding: 20px 0; border-right: 1px solid #7eb2dd;border-left: 1px solid #7eb2dd;">
+                            <a style="background-color:#7eb2dd; color: #FFB370; border-radius: 5px; padding: 10px 15px 10px 15px; text-decoration: none;" href="#">Online Store</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <table class="toy-1" width="50%" height="250" align="left" cellspacing="0" cellpadding="0" bgcolor="beige" style="border-left: 1px solid navy; border-bottom: 1px solid navy;  padding:20px 0 5px;" >
+                        <td style="padding-bottom:20px; border-left:1px solid #7eb2dd; border-right:1px solid #7eb2dd">
+                            <table class="toy-1" width="50%" height="250" align="left" cellspacing="0" cellpadding="0" bgcolor="beige" style=" padding:20px 0 5px;" >
                                 <tr>
-                                    <td width="195" align="center">
-                                        <img width="195" height="195" src="../email-psd-1/lego.jpg" alt="Lego box set.">
+                                    <td width="195" align="center" style="padding:0 10px">
+                                        <img width="195" height="195" style="border-radius: 50%;" src="../email-psd-1/lego.jpg" alt="Lego box set.">
                                         <h2>Featured</h2>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cum, explicabo eligendi alias nam sit assumenda dolorem modi eaque? Vero!
                                     </td>
                                 </tr>
                             </table>
-                            <table class="toy-2" width="50%" height="250" align="center" cellspacing="0" cellpadding="0" bgcolor="beige" style="border-right: 1px solid navy; border-bottom: 1px solid navy; padding:20px 0 5px;">
+                            <table class="toy-2" width="50%" height="250" align="center" cellspacing="0" cellpadding="0" bgcolor="beige" style=" padding:20px 0 5px;">
                                 <tr>
-                                    <td width="195" align="center">
-                                        <img width="195" height="195"  src="../email-psd-1/car.jpg" alt="Toy car set.">
+                                    <td width="195" align="center" style="padding:0 10px">
+                                        <img width="195" height="195" style="border-radius: 50%;" src="../email-psd-1/car.jpg" alt="Toy car set.">
                                         <h2>Featured</h2>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cum, explicabo eligendi alias nam sit assumenda dolorem modi eaque? Vero!
                                     </td>
@@ -57,7 +96,41 @@
                         </td>
                     </tr>
                     <tr>
-                        <td bgcolor="beige" align="center" style="font-size: 12px; padding:5px 0;">
+                        <td style="border-bottom: 1px solid #7eb2dd; border-left:1px solid #7eb2dd; border-right:1px solid #7eb2dd;">
+                            <table class="callout callout-1" width="200" align="left" border="0" cellspacing="0" cellpadding="0" style="padding-left:20px;padding-bottom:20px; " >
+                                <tr>
+                                    <td class="side-bar" valign="top" width="200" style="padding-left: 10px; padding-right: 10px; ">
+                                        <h3>Callout 1</h3><br class="spacer">
+                                        Eiusmod tempor inci didunt ut magna aliqua ut enim ad iam quis.
+                                        <br><br>
+                                        <a href="#" style="color: #7eb2dd;">Learn more</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="callout callout-2" width="200" align="left" border="0" cellspacing="0" cellpadding="0" style="padding-left:20px;padding-bottom:20px;" >
+                                <tr>
+                                    <td valign="top" width="200" style="padding-left: 10px; padding-right: 10px; border-left:1px solid #7eb2dd ">
+                                        <h3>Callout 2</h3><br class="spacer">
+                                        Eiusmod tempor inci didunt ut magna aliqua ut enim ad iam quis.
+                                        <br><br>
+                                        <a href="#" style="color: #7eb2dd;">Learn more</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="callout callout-3" width="200" align="left" border="0" cellspacing="0" cellpadding="0" style="padding-left:20px;padding-bottom:20px; ">
+                                <tr>
+                                    <td valign="top" width="200" style="padding-left: 10px; padding-right: 10px; border-left:1px solid #7eb2dd ">
+                                        <h3>Callout 3</h3><br class="spacer">
+                                        Eiusmod tempor inci didunt ut magna aliqua ut enim ad iam quis.
+                                        <br><br>
+                                        <a href="#" style="color:#7eb2dd; ">Learn more</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#efe1b0" align="center" style="font-size: 12px; padding:5px 0;">
                             &copy; Opjot Singh Nijjar 2020. 
                         </td>
                     </tr>
